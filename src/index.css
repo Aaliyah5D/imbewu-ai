@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", sans-serif;
+  --font-display: "Outfit", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-primary: #2E7D32;
+  --color-primary-dark: #1B5E20;
+  --color-primary-light: #66BB6A;
+  --color-accent: #FFC107;
+  --color-accent-dark: #FF9800;
+  --color-bg-warm: #F7FFF7;
+  --color-safari-green: #2E7D32;
+  
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-fade-in: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Base resets & styles */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-warm);
+  color: #1A2E1A;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+}
+
+/* Premium micro-interactions */
+.material-card {
+  background-color: #ffffff;
+  border-radius: 24px;
+  border: 1px solid rgba(46, 125, 50, 0.08);
+  box-shadow: 0 4px 20px -2px rgba(46, 125, 50, 0.04);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.material-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -4px rgba(46, 125, 50, 0.08);
+}
+
+/* Styled scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(46, 125, 50, 0.02);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(46, 125, 50, 0.15);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(46, 125, 50, 0.3);
+}

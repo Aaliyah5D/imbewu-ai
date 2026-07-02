@@ -1,0 +1,11 @@
+{
+  "name": "Imbewu AI",
+  "description": "An AI-powered agricultural funding and verification platform enabling African smallholder farmers to register via voice, verify crops with Gemini Vision, and receive climate-smart guidance.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
