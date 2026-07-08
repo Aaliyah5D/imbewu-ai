@@ -173,6 +173,7 @@ Imbewu AI contributes to:
 ---
 
 ## 📸 Demo
+**Link:** https://imbewu-ai.vercel.app/
 
 **Landing Page**
 
